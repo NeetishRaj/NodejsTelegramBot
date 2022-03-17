@@ -4,6 +4,21 @@ This is a telegram bot to read from a Telegram channel using webhook, then post 
 
 
 
+## Setup
+
+1. Create an AWS Lambda with `DynamoDbBasicExecution` policy and a POST REST API trigger.
+
+2. Zip and drop the project folder in Lambda and enter the environment variables in .env file.
+
+3. Create your telegram bot to listen to messages using BotFather in Telegram app itself.
+
+4. Setup a webhook with Telegram using the bot API Key by executing the `telegram_webhook_setup.js` file.
+
+5. Make sure to deploy the new changes in AWS Lambda and you should be able to listen to all the messages being shared by the bot and push them to AWS DynamoDB.
+
+
+
+
 
 ## Helpful resources
 
