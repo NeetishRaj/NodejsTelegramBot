@@ -13,3 +13,7 @@ This is a telegram bot to read from a Telegram channel using webhook, then post 
 
 3. Setup AWS Lambda with REST API triggers in API Gateway. https://www.youtube.com/watch?v=bYkjYojgccY
 
+4. Setup DynamoDB read-write role for AWS Lambda https://www.youtube.com/watch?v=ijyeE-pXFk0
+
+5. Webhook structure in Nodejs, https://stackoverflow.com/questions/35285600/how-to-receive-data-from-telegram-channel-to-webhook
+
