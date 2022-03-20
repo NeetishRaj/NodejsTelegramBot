@@ -4,7 +4,7 @@ require('dotenv').config();
 const { Telegraf } = require('telegraf')
 
 const bot = new Telegraf(process.env.BOT_TOKEN)
-
+console.log(bot);
 
 // Set telegram webhook
 // The second argument is necessary only if the client uses a self-signed

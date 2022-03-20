@@ -21,17 +21,22 @@ async function push_message_to_dynamo_db(message) {
 }
 
 exports.handler = async (event, context) => {
+  let message;
+  try {
+    message = event.body;
+    await push_message_to_dynamo_db(message);
+  } catch(e) {
+    console.log("Error Message: " + e.message);
+  } 
 
-  const message = JSON.parse(event.body);
-  await push_message_to_dynamo_db(message);
 
   const response = {
     statusCode: 200,
     headers: {
-      //   my_header: "my_value",
+      lambda: "custom_aws_lambda",
     },
     body: message,
-    isBase64Encoded: false,
+    isBase64Encoded: false
   };
 
   return response;
