@@ -38,3 +38,5 @@ This is a telegram bot to read from a Telegram channel using webhook, then post 
 
 8. Disable bot's privacy mode to listen to all the messages in any channel the bot is part of. https://stackoverflow.com/questions/42672034/can-a-telegram-bot-read-messages-of-channel
 
+9. What messages a bot will get? https://core.telegram.org/bots/faq#what-messages-will-my-bot-get
+
